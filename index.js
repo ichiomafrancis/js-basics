@@ -18,4 +18,4 @@ function grade(score) {
   }
 }
 
-grade(50);
+grade(100);
