@@ -7,7 +7,9 @@
 function isLandscape(width, height) {
   if (width > height) {
     return true;
-  } else return false;
+  } else {
+    return false;
+  }
 }
 
 console.log(isLandscape(5, 3));

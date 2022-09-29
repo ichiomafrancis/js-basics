@@ -20,19 +20,26 @@
 // license should be suspended.
 
 const speedLimit = 70; // km/hr
+const kmPerPoint = 5;
+
 let point;
 function checkSpeed(speed) {
   if (speed <= speedLimit) {
     console.log("Ok");
-  } else if (speed > speedLimit && speed < 74) {
+  } else if (speed > speedLimit && speed < speedLimit + kmPerPoint) {
     console.log("Still good");
   } else {
-    point = Math.floor((speed - speedLimit) / 5);
-    console.log(point);
-    if (point > 12) {
-      console.log("Your license has been suspended");
+    point = Math.floor((speed - speedLimit) / kmPerPoint);
+    if (point <= 12) {
+      console.log(point);
+    } else {
+      console.log(
+        "Your points is " +
+          point +
+          " which is greater than the allowable points (12), therefore your license has been suspended"
+      );
     }
   }
 }
 
-checkSpeed(85);
+checkSpeed(180);
