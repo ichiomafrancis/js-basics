@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const circle = {
+        radius: 1,
+        draw() {
+          console.log('Draw');
+        },
+      };
+
+      // using Object.keys to access the key, value pairs of an object.  Object.keys gives an array of the keys. Then we iterate through it using a for of loop
+
+      //method 1
+      // const keys = Object.keys(circle);
+      // // console.log(keys);
+      // for (let key of keys) {
+      //   console.log(key, circle[key]);
+      // }
+
+      //method 2
+      // for (let key of Object.keys(circle)) {
+      //   console.log(key, circle[key]);
+      // }
+
+      // using Object.entries to access the entries of an object.  Object.entries gives an array of key, value pairs. Then we iterate through it using a for of loop
+      // for (let entry of Object.entries(circle)) {
+      //   console.log(entry);
+      // }
+
+      //This is used to clone objects i.e copy the properties of a function into another function. Here the properties of circle function is copied into a new empty function called another.
+      // const another = Object.assign({}, circle);
+      // console.log(another);
+
+      //Older method of cloning objects
+      // const brandNew = {};
+      // for (let key in circle) {
+      //   brandNew[key] = circle[key];
+      // }
+      // console.log(brandNew);
+
+      //Simplest way of cloning objects is by using the spread operator which is 3 dots - ...
+      const brandNewer = { ...circle };
+
+      console.log(brandNewer);
+    </script>
+  </body>
+</html>
