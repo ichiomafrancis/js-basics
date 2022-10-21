@@ -7,11 +7,11 @@ let programming = {
     "http://stackoverflow.com/questions/234075/what-is-your-best-programmer-joke",
 };
 
-programming.languages.push(go);
+programming.languages.push("Go");
 
 programming.difficulty = 7;
 
-// delete.programming.jokes;
+delete programming.jokes;
 
 programming.isFun = true;
 
