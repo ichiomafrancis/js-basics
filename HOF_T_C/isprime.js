@@ -7,5 +7,5 @@ function isPrime(number) {
   return true;
 }
 
-let checkPrime = isPrime(29);
+let checkPrime = isPrime(31);
 console.log(checkPrime);
