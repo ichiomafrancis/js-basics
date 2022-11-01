@@ -36,26 +36,30 @@
 // Method 1
 function reject(array, fn) {
   let filtered = new Set(array.filter(fn));
-  let rejected = array.filter((x) => !filtered.has(x));
+  let rejected = array.filter((num) => !filtered.has(num));
   console.log(rejected);
 }
 
-reject([1, 2, 3, 4], function (val) {
-  return val > 2;
+// reject([1, 2, 3, 4], function (val) {
+//   return val > 2;
+// });
+
+reject([2, 3, 4, 5], function (val) {
+  return val % 2 === 0;
 });
 
-// If I have this array:
-var myArray = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
+// // If I have this array:
+// var myArray = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
 
-// and this one:
-var toRemove = ['b', 'c', 'g'];
+// // and this one:
+// var toRemove = ['b', 'c', 'g'];
 
-myArray = myArray.filter(function (el) {
-  return toRemove.indexOf(el) < 0;
-});
+// myArray = myArray.filter(function (el) {
+//   return toRemove.indexOf(el) < 0;
+// });
 
-//OR
+// //OR
 
-myArray = myArray.filter(function (el) {
-  return !toRemove.includes(el);
-});
+// myArray = myArray.filter(function (el) {
+//   return !toRemove.includes(el);
+// });
