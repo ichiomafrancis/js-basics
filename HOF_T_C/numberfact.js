@@ -6,18 +6,12 @@ function numberFact(number, fn) {
 // numberFact(59, isOdd);
 numberFact(59, isPrime);
 
-function isEven(number) {
-  if (number !== NaN && number !== 0 && number % 2 === 0) {
-    return true;
-  }
-  return false;
+function isEven(num) {
+  return num !== 0 && num % 2 === 0;
 }
 
-function isOdd(number) {
-  if (number !== NaN && number !== 0 && number % 2 !== 0) {
-    return true;
-  }
-  return false;
+function isOdd(num) {
+  return num !== 0 && num % 2 !== 0;
 }
 
 function isPrime(number) {
