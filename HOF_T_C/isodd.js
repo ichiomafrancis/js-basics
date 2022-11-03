@@ -1,9 +1,5 @@
-function isOdd(number) {
-  if (number !== NaN && number !== 0 && number % 2 !== 0) {
-    return true;
-  }
-  return false;
+function isEven(num) {
+  return num !== 0 && num % 2 !== 0;
 }
 
-let checkOdd = isOdd(14);
-console.log(checkOdd);
+console.log(isEven(0));
