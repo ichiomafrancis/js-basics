@@ -7,5 +7,15 @@ function isPrime(number) {
   return true;
 }
 
-let checkPrime = isPrime(31);
-console.log(checkPrime);
+//// OR
+
+// function isPrime(value) {
+//   for(var i = 2; i <= Math.sqrt(value); i++) {
+//       if(value % i === 0) {
+//           return false;
+//       }
+//   }
+//   return value > 1;
+// }
+
+console.log(isPrime(31));
