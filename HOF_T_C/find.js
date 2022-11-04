@@ -6,6 +6,13 @@ function find(arr, fn) {
 }
 
 //// METHOD 2
+// function find(arr, fn) {
+//   for (var i = 0; i < arr.length; i++) {
+//     if (fn(arr[i])) return arr[i];
+//   }
+// }
+
+//// METHOD 3
 // function find(array, fn) {
 //   let found = array.find(fn);
 //   console.log(found);
