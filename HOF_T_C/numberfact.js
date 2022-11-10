@@ -1,3 +1,12 @@
+/*  
+6.	numberFact
+Write a function called numberFact which takes in a number and a callback and returns the result of the callback with the number passed to it
+numberFact(59,isEven); // false
+numberFact(59,isOdd); // true
+numberFact(59,isPrime); // true
+
+*/
+
 function numberFact(number, fn) {
   console.log(fn(number));
 }

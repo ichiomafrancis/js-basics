@@ -1,3 +1,11 @@
+/*  
+5.	isPrime
+Write a function called isPrime which takes in a number and returns true if the number is a prime number (is greater than 1 and can only be divided in whole by itself and 1), otherwise returns false
+isPrime(8); // false
+isPrime(17); // true
+
+*/
+
 function isPrime(number) {
   if (number === 0 || number === 1) return false;
 
